@@ -1,0 +1,13 @@
+=========================================================
+MAC
+=========================================================
+To start on a mac use:
+brew services start mariadb
+
+To stop on a mac use:
+brew services stop mariadb
+
+provided you used homebrew to install (which you should).
+Once it is running, you can use `mysql` to launch it.
+
+The database files can be found in /usr/local/var/mysql directory
