@@ -11,3 +11,17 @@ provided you used homebrew to install (which you should).
 Once it is running, you can use `mysql` to launch it.
 
 The database files can be found in /usr/local/var/mysql directory
+
+
+=========================================================
+BACKUP
+=========================================================
+To save an export of the database file:
+mysqldump --databases --user=root --password your_db_name > export_into_db.sql
+
+To then load that file back in, make sure use create an empty database in
+which to load it (probably with the same name), then use:
+mysql -u <username> -p <databasename> < <filename.sql>
+
+** I have found that I don't need the -u or -p for the way
+mine is setup
