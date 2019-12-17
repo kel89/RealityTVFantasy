@@ -11,6 +11,11 @@ CREATE TABLE picks (
 	PRIMARY KEY 	(id)
 );
 
+CREATE TABLE users (
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user_name	VARCHAR(255)
+);
+
 
 /* Describe the table */
 DESCRIBE picks;

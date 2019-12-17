@@ -1,4 +1,11 @@
 =========================================================
+GENERAL
+=========================================================
+You can add user permission to database with:
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+**I used admin as username and password
+
+=========================================================
 MAC
 =========================================================
 To start on a mac use:
@@ -11,6 +18,15 @@ provided you used homebrew to install (which you should).
 Once it is running, you can use `mysql` to launch it.
 
 The database files can be found in /usr/local/var/mysql directory
+
+
+=========================================================
+LINUX
+=========================================================
+The database files are stored in /var/lib/mysql, however
+they seem to be locked for me. Can view with `sudi -i`, however
+I was still having issues copything these files, so need
+to use the backup steps to export.
 
 
 =========================================================
