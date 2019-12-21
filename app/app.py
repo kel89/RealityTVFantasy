@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 from flask_login import LoginManager, UserMixin, current_user, login_user
 import mysql.connector
 
@@ -16,6 +16,7 @@ db = mysql.connector.connect(
 )
 db_cursor = db.cursor()
 db_cursor.execute("USE realityTvFantasy;")
+
 
 # Routes
 @app.route("/")
@@ -44,6 +45,11 @@ def signup():
 @app.route("/logout")
 def logout():
 	return render_template("logout.html")
+
+@app.route("/shutdown")
+def shutdown():
+	func = request.environ.get('werkzeug.server.shutdown')
+	func()
 
 """
   _              _      
