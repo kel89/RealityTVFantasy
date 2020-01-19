@@ -21,8 +21,33 @@
 	<style>
 		.starRow{
 			border-top: 1px solid grey;
-			border-bottom: 1px solid grey;
+			/*border-bottom: 1px solid grey;*/
 		}
+
+		.starBox{
+			border: 2px solid darkgrey;
+			border-radius: 5px;
+			height: 300px;
+			width: 200px;
+			margin: 20px;
+			padding: 10px;
+			float:left;
+			box-shadow: 8px 8px 3px #ddd;;
+		}
+
+		.starImage {
+			width:150px;
+			max-height: 200px;
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.eliminated{
+			opacity: .25;
+		}
+
 	</style>
 
 </head>
@@ -41,13 +66,13 @@
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Dropdown
+					Contestants
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Coming Soon</a>
+						<a class="dropdown-item" href="#">Coming Soon</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item" href="#">Also coming soon</a>
 					</div>
 				</li>
 			</ul>
@@ -57,13 +82,6 @@
 	<div class='container-fluid'>
 		<div class='row'>
 			<div class='col' id='starsDisplay'>
-				<!-- Main col, on players page, show all the stars -->
-				<div class='row starRow p-4 m-4'>
-					<div class='col'>
-						<h4>Show title</h4>
-						Image grid
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -74,12 +92,14 @@
 
 <script>
 	let showDict = {
-		"bach": "Bachelor",
+		"bach": "The Bachelor",
 		"tc": "Top Chef",
 		"kbc" : "Kids Baking",
 		"pr": "Project Runway",
 		"sur": "Survivor",
 	}
+
+	buildStarDisplay();
 </script>
 
 </html>
