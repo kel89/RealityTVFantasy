@@ -14,6 +14,17 @@
 	<!-- D3 -->
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 
+	<!-- My scripts -->
+	<script src='Helpers/starDisplay.js'></script>
+
+	<!-- My Style -->
+	<style>
+		.starRow{
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -42,5 +53,33 @@
 			</ul>
 		</div>
 	</nav>
+
+	<div class='container-fluid'>
+		<div class='row'>
+			<div class='col' id='starsDisplay'>
+				<!-- Main col, on players page, show all the stars -->
+				<div class='row starRow p-4 m-4'>
+					<div class='col'>
+						<h4>Show title</h4>
+						Image grid
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<!-- Load the data -->
+<script src='Data/starData.js'></script>
+
+<script>
+	let showDict = {
+		"bach": "Bachelor",
+		"tc": "Top Chef",
+		"kbc" : "Kids Baking",
+		"pr": "Project Runway",
+		"sur": "Survivor",
+	}
+</script>
+
 </html>
