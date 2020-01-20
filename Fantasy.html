@@ -15,8 +15,10 @@
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 
 	<!-- My scripts -->
+	<script src='Helpers/helpers.js'></script>
 	<script src='Helpers/starDisplay.js'></script>
 	<script src='Helpers/userFunctions.js'></script>
+	<script src='Helpers/leaderboardFunctions.js'></script>
 
 	<!-- My Style -->
 	<link rel='stylesheet' href='Style/FantasyStyle.css'/>
@@ -32,12 +34,15 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick='buildStarDisplay()'>Contestants<span class="sr-only">(current)</span></a>
+				</li>
+				<li>
+					<a class='nav-link' href="#" onclick='buildLeaderboard()'>Leaderboard</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Contestants
+					Teams
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown" id='nav-user-dropdown-menu'>
 						<a class="dropdown-item" href="#">Coming Soon</a>
@@ -50,11 +55,8 @@
 		</div>
 	</nav>
 
-	<div class='container-fluid'>
-		<div class='row'>
-			<div class='col' id='starsDisplay'>
-			</div>
-		</div>
+	<div class='container-fluid' id='displayArea'>
+		
 	</div>
 </body>
 

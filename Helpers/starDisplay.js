@@ -12,6 +12,16 @@ function buildStarDisplay(){
 	For each show we create a startRow, then for the show
 	we get all of the stars, each star then gets a star box
 	*/
+
+	// Write base html
+	let baseHtml = `
+		<div class='row'>
+			<div class='col' id='starsDisplay'>
+			</div>
+		</div>
+	`;
+	$("#displayArea").html(baseHtml);
+
 	let shows = Object.keys(showDict);
 	shows.forEach(function(show){
 		let showName = showDict[show];
@@ -29,14 +39,6 @@ function buildStarDisplay(){
 		// Get the stars for the show
 		let stars = starData.filter(x => x.show == show);
 		stars.forEach(function(star){
-			// let starName = star.star;
-			// console.log(star);
-			// $("#" + show + "-col").append(`
-			// 	<div class='starBox' id='${starName}-box'>
-			// 		${starName}
-			// 	</div>
-			// `)
-
 			// get box
 			let html = makeStarBox(star);
 			$("#"+show + "-col").append(html);
@@ -62,6 +64,7 @@ function makeStarBox(data){
 	<div class='starBox ${elimated ? "eliminated" : ""}' id='${name}-${show}-box'>
 		<img src='Assets/Headshots/${file}' class='starImage center'></img><br>
 		<b>Name: </b>${name} <br>
+		<b>Show: </b>${showDict[show]} <br>
 		<b>Status: </b>${status}
 	</div>
 	`

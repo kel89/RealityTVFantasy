@@ -8,7 +8,7 @@
 .starBox{
 	border: 2px solid darkgrey;
 	border-radius: 5px;
-	height: 300px;
+	height: 320px;
 	width: 200px;
 	margin: 20px;
 	padding: 10px;
@@ -36,4 +36,23 @@
 
 .eliminated{
 	opacity: .25;
+}
+
+.leaderboard{
+	width:75%;
+	margin: auto;
+}
+
+.leaderboard tr{
+	height: 2em;
+	color: black;
+}
+
+.leaderboard tr:nth-child(even){
+	background: #ddd;
+}
+
+.leaderboard tr:hover{
+	background: darkgrey;
+	color: white;
 }
