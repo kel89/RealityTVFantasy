@@ -1,0 +1,39 @@
+/* FantasyStyle.css */
+
+.starRow{
+	border-bottom: 1px solid grey;
+	/*border-bottom: 1px solid grey;*/
+}
+
+.starBox{
+	border: 2px solid darkgrey;
+	border-radius: 5px;
+	height: 300px;
+	width: 200px;
+	margin: 20px;
+	padding: 10px;
+	float:left;
+	box-shadow: 8px 8px 3px #ddd;
+	position: relative;
+	top: 0px;
+	transition: .3s;
+}
+
+.starBox:hover{
+	top: -10px;
+	border: 3px solid black;
+	box-shadow: 15px 15px 5px #ddd;
+}
+
+.starImage {
+	width:150px;
+	max-height: 200px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.eliminated{
+	opacity: .25;
+}

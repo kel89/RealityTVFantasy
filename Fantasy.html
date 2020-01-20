@@ -16,39 +16,10 @@
 
 	<!-- My scripts -->
 	<script src='Helpers/starDisplay.js'></script>
+	<script src='Helpers/userFunctions.js'></script>
 
 	<!-- My Style -->
-	<style>
-		.starRow{
-			border-top: 1px solid grey;
-			/*border-bottom: 1px solid grey;*/
-		}
-
-		.starBox{
-			border: 2px solid darkgrey;
-			border-radius: 5px;
-			height: 300px;
-			width: 200px;
-			margin: 20px;
-			padding: 10px;
-			float:left;
-			box-shadow: 8px 8px 3px #ddd;;
-		}
-
-		.starImage {
-			width:150px;
-			max-height: 200px;
-			text-align: center;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.eliminated{
-			opacity: .25;
-		}
-
-	</style>
+	<link rel='stylesheet' href='Style/FantasyStyle.css'/>
 
 </head>
 
@@ -68,7 +39,7 @@
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Contestants
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown" id='nav-user-dropdown-menu'>
 						<a class="dropdown-item" href="#">Coming Soon</a>
 						<a class="dropdown-item" href="#">Coming Soon</a>
 						<div class="dropdown-divider"></div>
@@ -89,6 +60,7 @@
 
 <!-- Load the data -->
 <script src='Data/starData.js'></script>
+<script src='Data/userData.js'></script>
 
 <script>
 	let showDict = {
@@ -100,6 +72,8 @@
 	}
 
 	buildStarDisplay();
+
+	buildUserDropdowns();
 </script>
 
 </html>

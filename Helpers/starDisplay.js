@@ -61,8 +61,8 @@ function makeStarBox(data){
 	let html = `
 	<div class='starBox ${elimated ? "eliminated" : ""}' id='${name}-${show}-box'>
 		<img src='Assets/Headshots/${file}' class='starImage center'></img><br>
-		Name: ${name} <br>
-		Status: ${status}
+		<b>Name: </b>${name} <br>
+		<b>Status: </b>${status}
 	</div>
 	`
 
