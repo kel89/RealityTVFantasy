@@ -8,7 +8,7 @@
 .starBox{
 	border: 2px solid darkgrey;
 	border-radius: 5px;
-	height: 320px;
+	height: 330px;
 	width: 200px;
 	margin: 20px;
 	padding: 10px;
@@ -27,7 +27,7 @@
 
 .starImage {
 	width:150px;
-	max-height: 150px;
+	max-height: 170px;
 	text-align: center;
 	display: block;
 	margin-left: auto;

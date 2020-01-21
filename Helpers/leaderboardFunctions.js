@@ -22,7 +22,7 @@ function buildLeaderboard(){
 
 	// Filter out the null and sort
 	scoreData = scoreData.filter(x => x.team != "null")
-	scoreData.sort((a,b) => a.score - b.score);
+	scoreData.sort((a,b) => b.score - a.score);
 
 	// Make the table
 	let html = `
