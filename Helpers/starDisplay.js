@@ -22,26 +22,25 @@ function buildStarDisplay(){
 	`;
 	$("#displayArea").html(baseHtml);
 
-	let shows = Object.keys(showDict);
+	// let shows = Object.keys(showDict);
+	let shows = d3.set(data.map(x => x["Show"])).values();
 	shows.forEach(function(show){
-		let showName = showDict[show];
-
 		// make a show row
 		$("#starsDisplay").append(`
-			<div class='row starRow p-4 m-4' id='${show}-row'>
-				<div class='col' id='${show}-col'></div>
+			<div class='row starRow p-4 m-4' id='${cleanString(show)}-row'>
+				<div class='col' id='${cleanString(show)}-col'></div>
 			</div>
 			`);
 
 		// Add the title
-		$("#"+show+"-col").append(`<h4>${showName}</h4>`);
+		$("#"+cleanString(show)+"-col").append(`<h4>${show}</h4>`);
 
 		// Get the stars for the show
-		let stars = starData.filter(x => x.show == show);
+		let stars = data.filter(x => x.Show == show);
 		stars.forEach(function(star){
 			// get box
 			let html = makeStarBox(star);
-			$("#"+show + "-col").append(html);
+			$("#"+ cleanString(show) + "-col").append(html);
 		})
 	})
 }
@@ -53,19 +52,21 @@ function makeStarBox(data){
 	*/
 	// Organize the data
 	let file = data.file;
-	let name = data.star;
-	let show = data.show;
-	let status = data.status;
+	let name = data.Name;
+	let show = data.Show;
+	let status = data.Eliminated;
+	let team = data.PickedBy;
 
-	let elimated = status == "Eliminated" ? true : false;
+	let elimated = status == 0 ? "In the hunt" : "Eliminated";
 	// let elimated = true;
 
 	let html = `
-	<div class='starBox ${elimated ? "eliminated" : ""}' id='${name}-${show}-box'>
+	<div class='starBox ${status ? "eliminated" : ""}' id='${name}-${show}-box'>
 		<img src='Assets/Headshots/${file}' class='starImage center'></img><br>
 		<b>Name: </b>${name} <br>
-		<b>Show: </b>${showDict[show]} <br>
-		<b>Status: </b>${status}
+		<b>Show: </b>${show} <br>
+		<b>Status: </b>${elimated}
+		<b>Team: </b><a href="#" onclick='buildUserPage("${team}")'>${team}</a>
 	</div>
 	`
 

@@ -6,7 +6,7 @@ function buildUserDropdowns(){
 	so everyone can see their team
 	*/
 	// get the users
-	let users = d3.set(userData.map(x => x["PickedBy"])).values()
+	let users = d3.set(data.map(x => x["PickedBy"])).values()
 		.filter(x => x != "null");
 
 	// write html for drop downs
@@ -38,15 +38,11 @@ function buildUserPage(user){
 
 	// show the team for this user
 	let html = '';
-	let team = userData.filter(x => x["PickedBy"] == user);
+	let team = data.filter(x => x["PickedBy"] == user);
 	console.log(team);
 	team.forEach(function(star){
 		// get the actual star data
-		console.log(star);
-		let sd = starData.filter(x => cleanString(x.star) == cleanString(star.Name));
-		if (sd.length != 1){return}
-		sd = sd[0]
-		html += makeStarBox(sd);
+		html += makeStarBox(star);
 	});
 
 	$("#userDisplay").append(html);

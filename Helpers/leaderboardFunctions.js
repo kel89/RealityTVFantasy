@@ -16,22 +16,9 @@ function buildLeaderboard(){
 	$("#displayArea").html(baseHtml);
 
 	// Setup the data
-	let scoreDict = userData.reduce(function(acc, cur){
-		// check if we have the current name
-		let team = cur.PickedBy;
-		if (Object.keys(acc).indexOf(team) >= 0){
-			acc[team] = 0
-		}
-		else{
-			acc[team] += 1
-		}
-
-		return acc
-	}, {})
-
-	// Make the dict into an array
+	let users = d3.set(data.map(x => x.PickedBy)).values()
 	let scoreData = [];
-	Object.keys(scoreDict).forEach(s => scoreData.push({team:s, score:scoreDict[s]}));
+	users.forEach(u => scoreData.push({team:u, score:getScore(u)}));
 
 	// Filter out the null and sort
 	scoreData = scoreData.filter(x => x.team != "null")
@@ -57,4 +44,14 @@ function buildLeaderboard(){
 
 	// add to body
 	$("#leaderboard").html(html);
+}
+
+
+function getScore(user){
+	/*
+	Takes in a user and returns their score
+	*/
+	let userData = data.filter(x => x.PickedBy == user);
+	let score = userData.reduce((acc, curr) => acc += curr.Score, 0)
+	return score;
 }
