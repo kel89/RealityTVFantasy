@@ -34,7 +34,7 @@ function buildLeaderboard(){
 	`;
 	scoreData.forEach(function(d){
 		html += `
-			<tr>
+			<tr onclick='buildUserPage("${d.team}")'>
 				<td>${d.team}</td>
 				<td>${d.score}</td>
 			</tr>

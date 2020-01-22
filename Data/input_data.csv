@@ -18,16 +18,16 @@ The Bachelor,Alexa,bach_alexa.png,Matt,1,0
 The Bachelor,Hannah Ann,bach_hannahann.png,Martyna,0,1
 The Bachelor,Mykenna,bach_mykenna.png,Matt,0,1
 The Bachelor,Victoria P,bach_victoriaP.png,Brock,0,1
-Kids Baking Championship,Morgan,kbc_morgan.jpg,Marie,0,0
-Kids Baking Championship,Anthony,kbc_anthony.jpg,Martyna,0,0
-Kids Baking Championship,Elise,kbc_elise.jpg,Shelley,0,0
-Kids Baking Championship,Reggie,kbc_reggie.jpg,Alex G,0,0
-Kids Baking Championship,Saleem,kbc_saleem.jpg,Maddie,0,0
-Kids Baking Championship,Naima,kbc_naima.jpg,Matt,0,0
-Kids Baking Championship,Sam,kbc_sam.jpg,Andrew,0,0
-Kids Baking Championship,Avner,kbc_avner.jpg,Matt,0,0
-Kids Baking Championship,Liam,kbc_liam.jpg,Shelley,0,0
-Kids Baking Championship,Graysen,kbc_graysen.jpg,Jerry,0,0
+Kids Baking Championship,Morgan,kbc_morgan.jpg,Marie,0,1
+Kids Baking Championship,Anthony,kbc_anthony.jpg,Martyna,0,1
+Kids Baking Championship,Elise,kbc_elise.jpg,Shelley,1,0
+Kids Baking Championship,Reggie,kbc_reggie.jpg,Alex G,0,1
+Kids Baking Championship,Saleem,kbc_saleem.jpg,Maddie,0,1
+Kids Baking Championship,Naima,kbc_naima.jpg,Matt,0,1
+Kids Baking Championship,Sam,kbc_sam.jpg,Andrew,0,1
+Kids Baking Championship,Avner,kbc_avner.jpg,Matt,0,1
+Kids Baking Championship,Liam,kbc_liam.jpg,Shelley,0,1
+Kids Baking Championship,Graysen,kbc_graysen.jpg,Jerry,0,1
 Project Runway,Sergio,pr_sergio.png,Marie,0,0
 Project Runway,Geoffrey,pr_geoffrey.png,Martyna,0,0
 Project Runway,Dayoung,pr_dayoung.png,Jerry,0,0
@@ -65,9 +65,9 @@ Top Chef,Angelo,tc_angelo.jpg,Kenny,0,0
 Top Chef,Gregory,tc_gregory.jpg,Alex C,0,0
 Top Chef,Joe,tc_joe.jpg,Brock,0,0
 Top Chef,Lisa,tc_lisa.jpg,Kenny,0,0
-Top Chef,Eric,tc_eric.jpg,,0,0
+Top Chef,Eric,tc_eric.jpg,Jerry,0,0
 Top Chef,Nini,tc_nini.jpg,Kenny,0,0
-Top Chef,Karn,tc_karen.jpg,,0,0
+Top Chef,Karen,tc_karen.jpg,Andrew,0,0
 Top Chef,Bryan V,tc_bryan.jpg,Kenny,0,0
 Top Chef,Stephanie,tc_stephanie.jpg,Shelley,0,0
 Top Chef,Jennifer,tc_jennifer.jpg,Maddie,0,0
