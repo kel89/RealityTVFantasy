@@ -43,6 +43,10 @@
 	margin: auto;
 }
 
+.leaderboard td th{
+	text-align: center;
+}
+
 .leaderboard tr{
 	height: 2em;
 	color: black;
@@ -55,4 +59,24 @@
 .leaderboard tr:hover{
 	background: darkgrey;
 	color: white;
+}
+
+.starIcon {
+	display: table-cell;
+	float: left;
+	text-align: center;
+	line-height: 1.75rem; /* Makes the text centered --half height*/
+	width: 2.75rem;
+	height: 2.5rem;
+	border-radius: .25rem;
+	padding: .25rem;
+	margin: .25rem;
+	border: .5px solid black;
+	cursor: default;
+	/* transition: .3s; */
+}
+
+.starIcon:hover{
+	border: 2px solid black;
+	font-weight: bold;
 }
