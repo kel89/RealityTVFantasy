@@ -39,6 +39,11 @@ function buildLeaderboard(){
 
 	// add to body
 	$("#leaderboard").html(html);
+
+	// Attach event handlers
+	$(".starIcon").mouseover(hoverIcon);
+	$(".starIcon").mousemove(mousemoveIcon);
+	$(".starIcon").mouseout(mouseoutIcon);
 }
 
 function makeRow(user){
@@ -94,7 +99,10 @@ function makeStarIcon(d){
 			style='
 				background: ${showColorDict[show]};
 				opacity: ${elim == 1 ? .25 : 1};
-			'>${abreviationDict[show]}
+			'
+			show="${show}"
+			name="${name}"
+			>${abreviationDict[show]}
 		</div>
 
 	`;
@@ -108,4 +116,48 @@ function getScore(user){
 	let userData = data.filter(x => x.PickedBy == user);
 	let score = userData.reduce((acc, curr) => acc += curr.Score, 0)
 	return score;
+}
+
+function hoverIcon(){
+	/*
+	Called when a star icon is hovered
+	Prodce the toolthip and move it to initial spot
+	*/
+	let icon = $(this);
+
+	// get cooridates
+	let x = event.pageX + 50;
+	let y = event.pageY - 100;
+
+	// get info to show
+	let show = icon.attr("show");
+	let name = icon.attr("name");
+	let img_file = data.filter(x => (x.Name == name) & (x.Show == show))[0].file;
+
+	// write tooltip html
+	$("#tooltip").html(`
+		<img class='starImage small' src="Assets/Headshots/${img_file}"</img>
+		<br>
+		<b>Name:</b> ${name} <br>
+		<b>Show:</b> ${show}
+	`)
+
+	// Show and position tooltip
+	$("#tooltip").show();
+	$("#tooltip").css({'top':y, 'left':x})
+
+}
+
+function mousemoveIcon(){
+	/*
+	Called when the mouse is moving inside an icon
+	moves the tooltip with it
+	*/
+	let x = event.pageX + 50;
+	let y = event.pageY - 100;
+	$("#tooltip").css({'top':y, 'left':x})
+}
+
+function mouseoutIcon(){
+	$("#tooltip").hide()
 }

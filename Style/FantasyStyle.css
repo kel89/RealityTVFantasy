@@ -32,6 +32,13 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 3px;
+}
+
+/* Smaller version for tooltip */
+.starImage .small{
+	width: 75px;
+	max-height: 100px;
 }
 
 .eliminated{
@@ -79,4 +86,15 @@
 .starIcon:hover{
 	border: 2px solid black;
 	font-weight: bold;
+}
+
+.myTooltip{
+	display: none;
+	position: absolute;
+	background: black;
+	border-radius: 3px;
+	color: white;
+	padding: 5px;
+	border: 5px solid black;
+	/* max-width: 100px; */
 }
