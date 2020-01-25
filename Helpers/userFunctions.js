@@ -25,7 +25,8 @@ function buildUserPage(user){
 	/*
 	Builds the user page for a given user (name string)
 	*/
-
+	activateNav("navDropdown");
+	
 	// handle the base html
 	let baseHtml = `
 		<div class='row'>
@@ -43,7 +44,7 @@ function buildUserPage(user){
 		b = b.Name;
 		return a < b ? -1 : 1;
 	});
-	
+
 	team.forEach(function(star){
 		// get the actual star data
 		html += makeStarBox(star);

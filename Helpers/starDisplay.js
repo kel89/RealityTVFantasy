@@ -12,6 +12,10 @@ function buildStarDisplay(){
 	For each show we create a startRow, then for the show
 	we get all of the stars, each star then gets a star box
 	*/
+	// Toggle nav link
+
+	activateNav("contestatsNav")
+
 
 	// Write base html
 	let baseHtml = `

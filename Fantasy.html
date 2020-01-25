@@ -19,6 +19,7 @@
 	<script src='Helpers/starDisplay.js'></script>
 	<script src='Helpers/userFunctions.js'></script>
 	<script src='Helpers/leaderboardFunctions.js'></script>
+	<script src='Helpers/newsHelpers.js'></script>
 
 	<!-- My Style -->
 	<link rel='stylesheet' href='Style/FantasyStyle.css'/>
@@ -35,10 +36,10 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#" onclick='buildStarDisplay()'>Contestants<span class="sr-only">(current)</span></a>
+					<a class="nav-link" id='contestatsNav' href="#" onclick='buildStarDisplay()'>Contestants<span class="sr-only">(current)</span></a>
 				</li>
 				<li>
-					<a class='nav-link' href="#" onclick='buildLeaderboard()'>Leaderboard</a>
+					<a class='nav-link' id='leaderboardNav' href="#" onclick='buildLeaderboard()'>Leaderboard</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,6 +51,9 @@
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="#">Also coming soon</a>
 					</div>
+				</li>
+				<li>
+					<a class='nav-link' id='newsNav' href="#" onclick='buildNewsPage()'>News</a>
 				</li>
 			</ul>
 		</div>
@@ -85,6 +89,24 @@
 		"Survivor" : "S"
 	}
 
+	function activateNav(which){
+		// deactive all
+		$("#leaderboardNav").removeClass("active");
+		$("#contestatsNav").removeClass("active");
+		$("#navbarDropdown").removeClass("active");
+		$("#newsDropdown").removeClass("active");
+
+		$("#" + which).addClass('active');
+	}
+
+
+	/*
+		__  ___      _
+	   /  |/  /___ _(_)___
+	  / /|_/ / __ `/ / __ \
+	 / /  / / /_/ / / / / /
+	/_/  /_/\__,_/_/_/ /_/
+	*/
 
 	// buildStarDisplay();
 	buildLeaderboard();

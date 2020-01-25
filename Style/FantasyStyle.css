@@ -1,5 +1,9 @@
 /* FantasyStyle.css */
 
+.nav-link .active{
+	color: white;
+}
+
 .starRow{
 	border-bottom: 1px solid grey;
 	/*border-bottom: 1px solid grey;*/
@@ -50,13 +54,23 @@
 	margin: auto;
 }
 
-.leaderboard td th{
+.leaderboard td{
 	text-align: center;
+}
+
+.leaderboard td:nth-child(1){
+	cursor: pointer;
 }
 
 .leaderboard tr{
 	height: 2em;
 	color: black;
+}
+
+.leaderboard th{
+	background: #343A40;
+	color:white;
+	padding: 5px;
 }
 
 .leaderboard tr:nth-child(even){

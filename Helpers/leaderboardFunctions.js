@@ -4,6 +4,9 @@ function buildLeaderboard(){
 	/*
 	Builds the leaderboard page
 	*/
+	// Update nav icon
+	activateNav("leaderboardNav");
+
 	// handle the base html
 	let baseHtml = `
 		<div class='row'>
@@ -71,14 +74,14 @@ function makeRow(user){
 			return showA > showB ? -1 : 1;
 		}
 	});
-	let starIcons = '<span>';
+	let starIcons = '<div>';
 	team.forEach(d => starIcons += makeStarIcon(d));
-	starIcons += '</span>'
+	starIcons += '</div>'
 
 	let html = `
 		<tr onclick='buildUserPage("${user}")'>
 			<td style='padding-left:5px;'>${user}</td>
-			<td>${starIcons}</td>
+			<td align='center'>${starIcons}</td>
 			<td>${score}</td>
 		</tr>
 	`;
