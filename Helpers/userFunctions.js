@@ -38,7 +38,12 @@ function buildUserPage(user){
 
 	// show the team for this user
 	let html = '';
-	let team = data.filter(x => x["PickedBy"] == user);
+	let team = data.filter(x => x["PickedBy"] == user).sort(function(a,b){
+		a = a.Name;
+		b = b.Name;
+		return a < b ? -1 : 1;
+	});
+	
 	team.forEach(function(star){
 		// get the actual star data
 		html += makeStarBox(star);

@@ -6,7 +6,7 @@ Functions that help display all the stars
 
 function buildStarDisplay(){
 	/*
-	Biilds the start display and 
+	Biilds the start display and
 	places it in starsDisplay div
 
 	For each show we create a startRow, then for the show
@@ -36,7 +36,12 @@ function buildStarDisplay(){
 		$("#"+cleanString(show)+"-col").append(`<h4>${show}</h4>`);
 
 		// Get the stars for the show
-		let stars = data.filter(x => x.Show == show);
+		let stars = data.filter(x => x.Show == show).sort((a,b) => a.Name - b.Name);
+		stars = stars.sort(function(a,b){
+			a = a.Name;
+			b = b.Name;
+			return a < b ? -1 : 1;
+		})
 		stars.forEach(function(star){
 			// get box
 			let html = makeStarBox(star);
