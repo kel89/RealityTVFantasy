@@ -124,6 +124,7 @@ function hoverIcon(){
 	Prodce the toolthip and move it to initial spot
 	*/
 	let icon = $(this);
+	let tooltip = $("#tooltip");
 
 	// get cooridates
 	let x = event.pageX + 50;
@@ -135,16 +136,20 @@ function hoverIcon(){
 	let img_file = data.filter(x => (x.Name == name) & (x.Show == show))[0].file;
 
 	// write tooltip html
-	$("#tooltip").html(`
+	tooltip.html(`
 		<img class='starImage small' src="Assets/Headshots/${img_file}"</img>
 		<br>
 		<b>Name:</b> ${name} <br>
 		<b>Show:</b> ${show}
 	`)
 
+	if (y + tooltip.height() > window.innerHeight){
+		y = window.innerHeight - tooltip.height();
+	}
+
 	// Show and position tooltip
-	$("#tooltip").show();
-	$("#tooltip").css({'top':y, 'left':x})
+	tooltip.show();
+	tooltip.css({'top':y, 'left':x})
 
 }
 
@@ -153,8 +158,13 @@ function mousemoveIcon(){
 	Called when the mouse is moving inside an icon
 	moves the tooltip with it
 	*/
+	let tooltip = $("#tooltip");
 	let x = event.pageX + 50;
 	let y = event.pageY - 100;
+	if (y + tooltip.height() > window.innerHeight){
+		// console.log()
+		y = window.innerHeight - tooltip.height();
+	}
 	$("#tooltip").css({'top':y, 'left':x})
 }
 
