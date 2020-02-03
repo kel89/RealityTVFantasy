@@ -117,6 +117,11 @@ function getScore(user){
 	Takes in a user and returns their score
 	*/
 	let userData = data.filter(x => x.PickedBy == user);
+	// console.log(userData);
+	let s =0;
+	userData.forEach(function(d){
+		s += d.Score;
+	})
 	let score = userData.reduce((acc, curr) => acc += curr.Score, 0)
 	return score;
 }
