@@ -149,7 +149,7 @@ function buildNewsPage(){
 	// handle the base html
 	let baseHtml = `
 		<div class='row'>
-			<div class='col p-4 m-4' id='newsDisplay'
+			<div class='col' id='newsDisplay'
 				style='margin:auto;'>
 			</div>
 		</div>
@@ -159,7 +159,7 @@ function buildNewsPage(){
     // Add the news
     newsData.forEach(function(news){
         $("#newsDisplay").append(`
-			<div class='row starRow p-4 m-4'>
+			<div class='row newsRow'>
 				<div class='col'>
                     <h4>${news.date}</h4><br>
                     <p>${news.news}</p>

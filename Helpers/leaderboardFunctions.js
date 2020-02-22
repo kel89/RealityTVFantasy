@@ -10,7 +10,7 @@ function buildLeaderboard(){
 	// handle the base html
 	let baseHtml = `
 		<div class='row'>
-			<div class='col p-4 m-4' id='leaderboard' class='starRow'
+			<div class='col mt-4' id='leaderboard' class='starRow'
 				style='margin:auto;'>
 				Leaderboard
 			</div>
