@@ -38,37 +38,37 @@
 36,Survivor,Tyson,sur_tyson.jpg,Nate,0,Tyson,0.0,0.0,0.0,0.0,1.0,1.0,2.0
 37,Survivor,Wendell,sur_wendell.jpg,Nate,0,Wendell,0.0,0.0,0.0,0.0,1.0,1.0,2.0
 38,Survivor,Yul,sur_yul.jpg,Alex G,0,Yul,0.0,0.0,0.0,0.0,1.0,1.0,2.0
-39,The Bachelor,Alayah,bach_alayah.png,Brock,1,Alayah,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-40,The Bachelor,Alexa,bach_alexa.png,Matt,1,Alexa,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-41,The Bachelor,Deandra,bach_deandra.png,Maddie,1,Deandra,1.0,0.0,0.0,0.0,0.0,0.0,1.0
-42,The Bachelor,Hannah Ann,bach_hannahann.png,Martyna,0,Hannah Ann,1.0,1.0,1.0,1.0,1.0,1.0,6.0
-43,The Bachelor,Jasmine,bach_jasmine.png,Jessica,1,Jasmine,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-44,The Bachelor,Kelley,bach_kelley.png,Maddie,1,Kelley,1.0,1.0,1.0,1.0,0.0,0.0,4.0
-45,The Bachelor,Kelsey,bach_kelsey.png,Shelley,1,Kelsey,1.0,1.0,1.0,1.0,1.0,0.0,5.0
-46,The Bachelor,Kiarra,bach_kiarra.png,Matt,1,Kiarra,1.0,0.0,0.0,0.0,0.0,0.0,1.0
-47,The Bachelor,Lexi,bach_lexi.png,Alex G,1,Lexi,1.0,1.0,0.0,0.0,0.0,0.0,2.0
-48,The Bachelor,Madison,bach_madison.png,Nate,0,Madison,1.0,1.0,1.0,1.0,1.0,1.0,6.0
-49,The Bachelor,Mykenna,bach_mykenna.png,Matt,1,Mykenna,1.0,1.0,1.0,0.0,0.0,0.0,3.0
-50,The Bachelor,Natasha,bach_natasha.png,Marie,1,Natasha,1.0,1.0,1.0,1.0,0.0,0.0,4.0
-51,The Bachelor,Sarah C,bach_sarahc.png,Jerry,1,Sarah C,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-52,The Bachelor,Savannah,bach_savannah.png,0,1,Savannah,1.0,0.0,0.0,0.0,0.0,0.0,1.0
-53,The Bachelor,Shiann,bach_shiann.png,Alex C,1,Shiann,1.0,1.0,0.0,0.0,0.0,0.0,2.0
-54,The Bachelor,Sydney,bach_sydney.png,Alex G,1,Sydney,1.0,1.0,1.0,0.0,0.0,0.0,3.0
-55,The Bachelor,Tammy,bach_tammy.png,Alex G,1,Tammy,1.0,1.0,1.0,0.0,0.0,0.0,3.0
-56,The Bachelor,Victoria F,bach_victoriaF.png,Andrew,0,Victoria F,1.0,1.0,1.0,1.0,1.0,1.0,6.0
-57,The Bachelor,Victoria P,bach_victoriaP.png,Brock,1,Victoria P,1.0,1.0,1.0,0.0,0.0,0.0,3.0
-58,Top Chef,Angelo,tc_angelo.jpg,Kenny,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-59,Top Chef,Brian M,tc_brian.jpg,Martyna,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-60,Top Chef,Bryan V,tc_bryan.jpg,Kenny,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-61,Top Chef,Eric,tc_eric.jpg,Jerry,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-62,Top Chef,Gregory,tc_gregory.jpg,Alex C,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-63,Top Chef,Jamie,tc_jamie.jpg,Brock,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-64,Top Chef,Jennifer,tc_jennifer.jpg,Maddie,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-65,Top Chef,Joe,tc_joe.jpg,Brock,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-66,Top Chef,Karen,tc_karen.jpg,Andrew,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-67,Top Chef,Kevin,tc_kevin.jpg,Kenny,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-68,Top Chef,Lee Anne,tc_leeanne.jpg,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-69,Top Chef,Lisa,tc_lisa.jpg,Kenny,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-70,Top Chef,Melissa,tc_melissa.jpg,Jessica,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-71,Top Chef,Nini,tc_nini.jpg,Kenny,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-72,Top Chef,Stephanie,tc_stephanie.jpg,Shelley,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+39,The Bachelor,Alayah,bach_alayah.png,Brock,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+40,The Bachelor,Alexa,bach_alexa.png,Matt,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+41,The Bachelor,Deandra,bach_deandra.png,Maddie,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+42,The Bachelor,Hannah Ann,bach_hannahann.png,Martyna,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+43,The Bachelor,Jasmine,bach_jasmine.png,Jessica,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+44,The Bachelor,Kelley,bach_kelley.png,Maddie,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+45,The Bachelor,Kelsey,bach_kelsey.png,Shelley,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+46,The Bachelor,Kiarra,bach_kiarra.png,Matt,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+47,The Bachelor,Lexi,bach_lexi.png,Alex G,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+48,The Bachelor,Madison,bach_madison.png,Nate,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+49,The Bachelor,Mykenna,bach_mykenna.png,Matt,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+50,The Bachelor,Natasha,bach_natasha.png,Marie,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+51,The Bachelor,Sarah C,bach_sarahc.png,Jerry,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+52,The Bachelor,Savannah,bach_savannah.png,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+53,The Bachelor,Shiann,bach_shiann.png,Alex C,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+54,The Bachelor,Sydney,bach_sydney.png,Alex G,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+55,The Bachelor,Tammy,bach_tammy.png,Alex G,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+56,The Bachelor,Victoria F,bach_victoriaF.png,Andrew,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+57,The Bachelor,Victoria P,bach_victoriaP.png,Brock,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+58,Top Chef,Angelo,tc_angelo.jpg,Kenny,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+59,Top Chef,Brian M,tc_brian.jpg,Martyna,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+60,Top Chef,Bryan V,tc_bryan.jpg,Kenny,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+61,Top Chef,Eric,tc_eric.jpg,Jerry,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+62,Top Chef,Gregory,tc_gregory.jpg,Alex C,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+63,Top Chef,Jamie,tc_jamie.jpg,Brock,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+64,Top Chef,Jennifer,tc_jennifer.jpg,Maddie,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+65,Top Chef,Joe,tc_joe.jpg,Brock,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66,Top Chef,Karen,tc_karen.jpg,Andrew,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+67,Top Chef,Kevin,tc_kevin.jpg,Kenny,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+68,Top Chef,Lee Anne,tc_leeanne.jpg,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+69,Top Chef,Lisa,tc_lisa.jpg,Kenny,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+70,Top Chef,Melissa,tc_melissa.jpg,Jessica,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+71,Top Chef,Nini,tc_nini.jpg,Kenny,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+72,Top Chef,Stephanie,tc_stephanie.jpg,Shelley,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
