@@ -1,4 +1,4 @@
-,Show,Name,file,PickedBy,Eliminated,Contestant,Week 1,Week 2,Week 3 Part 1,Week 3 Part 2,Week 4,Week 5,Score
+,Show,Name,file,PickedBy,Eliminated,Contestant,Week 1,Week 2,Week 3 1,Week 3 2,Week 4,Week 5,Score
 0,Kids Baking Championship,Anthony,kbc_anthony.jpg,Martyna,1,Anthony,1.0,1.0,0.0,0.0,0.0,0.0,2.0
 1,Kids Baking Championship,Avner,kbc_avner.jpg,Matt,1,Avner,1.0,1.0,1.0,0.0,0.0,0.0,3.0
 2,Kids Baking Championship,Elise,kbc_elise.jpg,Shelley,1,Elise,0.0,0.0,0.0,0.0,0.0,0.0,0.0
@@ -10,9 +10,9 @@
 8,Kids Baking Championship,Saleem,kbc_saleem.jpg,Maddie,1,Saleem,1.0,0.0,0.0,0.0,0.0,0.0,1.0
 9,Kids Baking Championship,Sam,kbc_sam.jpg,Andrew,0,Sam,1.0,1.0,1.0,0.0,1.0,1.0,5.0
 10,Project Runway,Brittany,pr_brittany.png,Marie,0,Brittany,1.0,1.0,1.0,0.0,1.0,1.0,5.0
-11,Project Runway,Chelsey,pr_chelsea.png,Andrew,0,Chelsey,1.0,0.0,0.0,0.0,0.0,1.0,2.0
-12,Project Runway,Dayoung,pr_dayoung.png,Jerry,0,Dayoung,1.0,0.0,0.0,0.0,0.0,1.0,2.0
-13,Project Runway,Delvin,pr_delvin.png,Alex C,0,Delvin,1.0,1.0,1.0,0.0,0.0,1.0,4.0
+11,Project Runway,Chelsey,pr_chelsea.png,Andrew,1,Chelsey,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+12,Project Runway,Dayoung,pr_dayoung.png,Jerry,1,Dayoung,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+13,Project Runway,Delvin,pr_delvin.png,Alex C,1,Delvin,1.0,1.0,1.0,0.0,0.0,0.0,3.0
 14,Project Runway,Geoffrey,pr_geoffrey.png,Martyna,0,Geoffrey,1.0,1.0,1.0,0.0,1.0,1.0,5.0
 15,Project Runway,Marquise,pr_marquise.png,Brock,0,Marquise,0.0,1.0,1.0,0.0,1.0,1.0,4.0
 16,Project Runway,Nancy,pr_nancy.png,Shelley,0,Nancy,1.0,1.0,1.0,0.0,1.0,1.0,5.0
