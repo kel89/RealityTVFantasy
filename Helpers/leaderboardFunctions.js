@@ -19,7 +19,7 @@ function buildLeaderboard(){
 	$("#displayArea").html(baseHtml);
 
 	// Setup the data
-	let users = d3.set(data.map(x => x.PickedBy)).values().filter(x => x != "null");
+	let users = d3.set(data.map(x => x.PickedBy)).values().filter(x => x != 0);
 	users.sort(function(a,b){
 		a = getScore(a);
 		b = getScore(b);
