@@ -1,0 +1,35 @@
+/* baseStyle.css */
+
+/* Set the color variables
+ Based on style 21 form: https://visme.co/blog/website-color-schemes/
+*/
+:root{
+	--base-1: #5680E9;
+	--base-2: #84CEEB;
+	--base-3: #5AB9EA;
+	--accent-1: #C1C8E4;
+	--accent-2: #8860D0;
+}
+
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-image: linear-gradient(to bottom right, var(--base-1), var(--accent-1));
+}
+
+.heading{
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.vcenter{
+	margin-top: 25%;
+	/* margin-bottom: bottom; */
+}
