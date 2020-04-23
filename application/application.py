@@ -21,6 +21,14 @@ application.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 def index():
 	return render_template("index.html")
 
+@application.route("/login")
+def login():
+	return render_template("login.html")
+
+@application.route("/signup")
+def signup():
+	return render_template("signup.html")
+
 # Run
 if __name__ == "__main__":
 	application.run(debug=True, host='0.0.0.0')
