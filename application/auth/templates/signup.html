@@ -29,12 +29,12 @@
 					<div class='formBox'>
 						{% with messages = get_flashed_messages() %}
 						{% if messages %}
-						<div class="notification is-danger">
+						<div class="alert alert-danger">
 						{{ messages[0] }}
 						</div>
 						{% endif %}
 						{% endwith %}
-						<form method="POST" action="/login">
+						<form method="POST" action="/signup">
 							<div class="form-group">
 								<div class="control">
 									<input class="form-control" type="name" name="name" placeholder="Name">
@@ -55,7 +55,7 @@
 
 							<div class="form-group">
 								<div class="control">
-									<input class="form-control" type="password" name="password" placeholder="Confirm Password">
+									<input class="form-control" type="password" name="confirm" placeholder="Confirm Password">
 								</div>
 							</div>
 
